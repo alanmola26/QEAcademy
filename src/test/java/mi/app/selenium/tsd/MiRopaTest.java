@@ -27,7 +27,7 @@ public class MiRopaTest extends MiBaseTest {
 		inicio_page.ClickSigninButton();
 		Thread.sleep(1000);
 		
-		account_page.sendmailbox("4@live.com.mx");
+		account_page.sendmailbox("422@live.com.mx");
 		Thread.sleep(1000);
 		
 		account_page.clickcreatebutton();

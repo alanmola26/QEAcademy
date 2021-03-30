@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47244" started-at="2021-03-30T15:46:17 CST" finished-at="2021-03-30T15:47:05 CST">
+  <suite started-at="2021-03-30T16:24:08 CST" name="Default suite" finished-at="2021-03-30T16:24:56 CST" duration-ms="47828">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47244" started-at="2021-03-30T15:46:17 CST" finished-at="2021-03-30T15:47:05 CST">
+    <test started-at="2021-03-30T16:24:08 CST" name="Default test" finished-at="2021-03-30T16:24:56 CST" duration-ms="47828">
       <class name="mi.app.selenium.tsd.MiRopaTest">
-        <test-method status="PASS" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MiRopaTest@2d6eabae]" name="setupDriver" is-config="true" duration-ms="9038" started-at="2021-03-30T15:46:17 CST" finished-at="2021-03-30T15:46:26 CST">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MiRopaTest@1f97cf0d]" started-at="2021-03-30T16:24:08 CST" name="setupDriver" finished-at="2021-03-30T16:24:23 CST" duration-ms="14547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="setupClasses()[pri:0, instance:mi.app.selenium.tsd.MiRopaTest@2d6eabae]" name="setupClasses" is-config="true" duration-ms="34" started-at="2021-03-30T15:46:26 CST" finished-at="2021-03-30T15:46:26 CST">
+        <test-method is-config="true" signature="setupClasses()[pri:0, instance:mi.app.selenium.tsd.MiRopaTest@1f97cf0d]" started-at="2021-03-30T16:24:23 CST" name="setupClasses" finished-at="2021-03-30T16:24:23 CST" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClasses -->
-        <test-method status="PASS" signature="createRopaAccount()[pri:0, instance:mi.app.selenium.tsd.MiRopaTest@2d6eabae]" name="createRopaAccount" duration-ms="38133" started-at="2021-03-30T15:46:26 CST" finished-at="2021-03-30T15:47:05 CST">
+        <test-method signature="createRopaAccount()[pri:0, instance:mi.app.selenium.tsd.MiRopaTest@1f97cf0d]" started-at="2021-03-30T16:24:23 CST" name="createRopaAccount" finished-at="2021-03-30T16:24:56 CST" duration-ms="33177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createRopaAccount -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:mi.app.selenium.tsd.MiRopaTest@2d6eabae]" name="closeDriver" is-config="true" duration-ms="0" started-at="2021-03-30T15:47:05 CST" finished-at="2021-03-30T15:47:05 CST">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:mi.app.selenium.tsd.MiRopaTest@1f97cf0d]" started-at="2021-03-30T16:24:56 CST" name="closeDriver" finished-at="2021-03-30T16:24:56 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
