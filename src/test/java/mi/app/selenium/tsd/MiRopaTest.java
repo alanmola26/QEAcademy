@@ -24,6 +24,8 @@ public class MiRopaTest extends MiBaseTest {
 	@Test
 	public void createRopaAccount() throws InterruptedException {
 		
+		//CHANGE
+		
 		inicio_page.ClickSigninButton();
 		Thread.sleep(1000);
 		
