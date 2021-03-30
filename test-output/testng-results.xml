@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="47244" started-at="2021-03-30T15:46:17 CST" finished-at="2021-03-30T15:47:05 CST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="47244" started-at="2021-03-30T15:46:17 CST" finished-at="2021-03-30T15:47:05 CST">
+      <class name="mi.app.selenium.tsd.MiRopaTest">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MiRopaTest@2d6eabae]" name="setupDriver" is-config="true" duration-ms="9038" started-at="2021-03-30T15:46:17 CST" finished-at="2021-03-30T15:46:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="setupClasses()[pri:0, instance:mi.app.selenium.tsd.MiRopaTest@2d6eabae]" name="setupClasses" is-config="true" duration-ms="34" started-at="2021-03-30T15:46:26 CST" finished-at="2021-03-30T15:46:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClasses -->
+        <test-method status="PASS" signature="createRopaAccount()[pri:0, instance:mi.app.selenium.tsd.MiRopaTest@2d6eabae]" name="createRopaAccount" duration-ms="38133" started-at="2021-03-30T15:46:26 CST" finished-at="2021-03-30T15:47:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createRopaAccount -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:mi.app.selenium.tsd.MiRopaTest@2d6eabae]" name="closeDriver" is-config="true" duration-ms="0" started-at="2021-03-30T15:47:05 CST" finished-at="2021-03-30T15:47:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- mi.app.selenium.tsd.MiRopaTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
