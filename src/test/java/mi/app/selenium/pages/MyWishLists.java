@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class MyWishLists {
 
-	// opcion
+	
 	final WebDriver driver;
 	
 	public MyWishLists(WebDriver driver) {
