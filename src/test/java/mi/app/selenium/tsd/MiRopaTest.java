@@ -23,13 +23,11 @@ public class MiRopaTest extends MiBaseTest {
 	
 	@Test
 	public void createRopaAccount() throws InterruptedException {
-		// hola que hace 
-
-		
+		 		
 		inicio_page.ClickSigninButton();
 		Thread.sleep(1000);
 		
-		account_page.sendmailbox("422@live.com.mx");
+		account_page.sendmailbox("78@live.com.mx");
 		Thread.sleep(1000);
 		
 		account_page.clickcreatebutton();
