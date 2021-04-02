@@ -5,19 +5,23 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Ropa_Inicio_page {
+public class Start_page {
 	
 	private WebDriver driver;
 	
-	public Ropa_Inicio_page(WebDriver driver) {
+	public Start_page(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
+	
 	@FindBy(xpath="//*[@class='login']")
 	private WebElement loginButton;
+	
+	//------------------------------------------
 
-	public void ClickSigninButton() {
-		loginButton.click();		
+	public void clickSignin() throws InterruptedException {
+		
+		loginButton.click();	
+		Thread.sleep(1000);
 	}
 }

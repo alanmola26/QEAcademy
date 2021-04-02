@@ -7,11 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class Ropa_Info_page {
+public class Register_page {
 	
     private WebDriver driver;
 	
-	public Ropa_Info_page(WebDriver driver) {
+	public Register_page(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);	
 	}
@@ -31,8 +31,11 @@ public class Ropa_Info_page {
 	@FindBy(xpath="//*[@id='passwd']")	
 	private WebElement passwordtextbox;	
 	
-	@FindBy(xpath="//*[@id='newsletter']")	
+	@FindBy(xpath="//*[@id='newsletter']")
 	private WebElement checkboxnewsletter;	
+	
+	@FindBy(xpath="//*[@id='optin']")
+	private WebElement checkboxoffers;
 	
 	@FindBy(xpath="//*[@id='firstname']")	
 	private WebElement textboxagainname;	
@@ -72,78 +75,39 @@ public class Ropa_Info_page {
 	
 	//----------------------------------------------------
 
-	public void clickgenderbutton() {
-		genderbutton.click();		
-	}
-	public void sendfirstname(String name) {
-		firstnametextbox.sendKeys(name);		
-	}
-	public void sendlastname(String lastname) {
-		lastnametextbox.sendKeys(lastname);
-	}
-	public void sendemail() {
+	public void registerUser(String firstName, String lastName, String pass, String day, String month, 
+			String year, String company, String address, String address2, String city, String state, 
+			String postcode, String country, String other, String homephone, String mobilephone ) throws InterruptedException {
+		
+		genderbutton.click();
+		firstnametextbox.sendKeys(firstName);
+		lastnametextbox.sendKeys(lastName);
 		emailtextbox.click();
-	}
-	public void sendpassword(String pass) {
-		passwordtextbox.sendKeys(pass);		
-	}
-	public void chooseday(String day) {
+		passwordtextbox.sendKeys(pass);	
 		Select selectDays = new Select(driver.findElement(By.id("days")));
-		selectDays.selectByValue(day);				
-	}
-	public void choosemonth(String month) {
+		selectDays.selectByValue(day);
 		Select selectmonths = new Select(driver.findElement(By.id("months")));
-		selectmonths.selectByValue(month);				
-	}
-	public void chooseyear(String year) {
+		selectmonths.selectByValue(month);	
 		Select selectyears = new Select(driver.findElement(By.id("years")));
-		selectyears.selectByValue(year);				
-	}
-	public void clicknewsletter() {
-		checkboxnewsletter.click();		
-	}
-	public void againsendname() {
-		textboxagainname.click();		
-	}
-	public void againsendlastname() {
-		textboxagainlastname.click();	
-	}
-	public void sendcompany(String company) {
+		selectyears.selectByValue(year);
+		checkboxnewsletter.click();	
+		checkboxoffers.click();	
+		textboxagainname.click();
+		textboxagainlastname.click();
 		textboxcompany.sendKeys(company);
-	}
-	public void sendaddress(String address) {
-		textboxaddress.sendKeys(address);		
-	}
-	public void sendaddress2(String address2) {
-		textboxaddress2.sendKeys(address2);		
-	}
-	public void sendcity(String city) {
-		textboxcity.sendKeys(city);		
-	}
-	public void choosestate(String state) {
+		textboxaddress.sendKeys(address);
+		textboxaddress2.sendKeys(address2);	
+		textboxcity.sendKeys(city);	
 		Select selectstate = new Select(driver.findElement(By.id("id_state")));
-		selectstate.selectByValue(state);		
-	}
-	public void sendpostalcode(String postcode) {
-		textboxpostcode.sendKeys(postcode);		
-	}
-	public void choosecountry(String country) {
+		selectstate.selectByValue(state);	
+		textboxpostcode.sendKeys(postcode);	
 		Select selectcountry = new Select(driver.findElement(By.id("id_country")));
-		selectcountry.selectByValue(country);					
-	}
-	public void sendanotherinfo(String other) {
-		textboxother.sendKeys(other);			
-	}
-	public void sendhomephone(String homephone) {
-		textboxhomephone.sendKeys(homephone);	
-	}
-	public void sendmobilephone(String mobilephone) {
-		textboxmobilephone.sendKeys(mobilephone);			
-	}
-	public void sendaliasaddress() {
-		textboxaliasaddress.click();		
-	}
-	public void ClickRegister() {
-		registerButton.click();		
-	}
+		selectcountry.selectByValue(country);	
+		textboxother.sendKeys(other);
+		textboxhomephone.sendKeys(homephone);
+		textboxmobilephone.sendKeys(mobilephone);
+		textboxaliasaddress.click();
+		registerButton.click();	
+		Thread.sleep(1000);
+	}	
 }
