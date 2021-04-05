@@ -20,12 +20,18 @@ public class MyAccount_page {
 		@FindBy(xpath="//*[@name='submit_search']")
 		private WebElement searchbutton;
 		
+		@FindBy(xpath="//a[@title='My wishlists']")
+		private WebElement wLButton;
+		
 		//------------------------------------------------
 
-		public void searchClothes(String search) throws InterruptedException {
-			
+		public void searchClothes(String search) throws InterruptedException {			
 			textboxsearch.sendKeys(search);			
 			searchbutton.click();	
-			Thread.sleep(1000);
+			Thread.sleep(2000);
+	}
+		public void myWishListsButton() throws InterruptedException {
+			wLButton.click();
+			Thread.sleep(2000);
 	}
 }

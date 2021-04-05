@@ -4,11 +4,27 @@
   <test thread-count="5" name="Default test" verbose="2">
     <classes>
       <class name="mi.app.selenium.tsd.MyStoreTest">
-        <methods>
-          <include name="createRopaAccount"/>
+        <methods>        
+        
+          <include name="createAccountUser"/> 
+                   
+            <include name="happySignIn"/>
+            <include name="wrongSignInEmail" /> 
+            <include name="wrognSignInPasswd" /> 
+                        
+              <include name="addCart" /> 
+              <include name="purchaseTDC" /> 
+              <include name="purchaseCheck" />   
+                         
+                <include name="purchaseFromCartTDC" />   
+                <include name="purchaseFromCartCheck" /> 
+                 
+                  <include name="addToWishList" /> 
+                  <include name="sendWishList" /> 
+                                                        
         </methods>
       </class> <!-- mi.app.selenium.tsd.MiRopaTest -->
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->
-            
+           

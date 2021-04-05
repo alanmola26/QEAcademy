@@ -5,10 +5,9 @@
     <classes>
       <class name="mi.app.selenium.tsd.MyStoreTest">
         <methods>
-          <include name="setupClasses"/>
-          <include name="closeDriver"/>
+          <include name="sendWishList"/>
           <include name="setupDriver"/>
-          <include name="createRopaAccount"/>
+          <include name="afterTest"/>
         </methods>
       </class> <!-- mi.app.selenium.tsd.MyStoreTest -->
     </classes>

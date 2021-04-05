@@ -19,9 +19,9 @@ public class Start_page {
 	
 	//------------------------------------------
 
-	public void clickSignin() throws InterruptedException {
+	public void clickSigninLogin() throws InterruptedException {
 		
 		loginButton.click();	
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 	}
 }

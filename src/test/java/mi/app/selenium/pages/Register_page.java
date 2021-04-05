@@ -108,6 +108,6 @@ public class Register_page {
 		textboxmobilephone.sendKeys(mobilephone);
 		textboxaliasaddress.click();
 		registerButton.click();	
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 	}	
 }
