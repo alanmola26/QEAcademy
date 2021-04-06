@@ -1,141 +1,421 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="8" failed="1" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-05T18:22:41 CDT" name="Default suite" finished-at="2021-04-05T18:27:15 CDT" duration-ms="274517">
+  <suite started-at="2021-04-05T19:20:42 CDT" name="Default suite" finished-at="2021-04-05T19:26:26 CDT" duration-ms="343554">
     <groups>
     </groups>
-    <test started-at="2021-04-05T18:22:41 CDT" name="Default test" finished-at="2021-04-05T18:27:15 CDT" duration-ms="274517">
+    <test started-at="2021-04-05T19:20:42 CDT" name="Default test" finished-at="2021-04-05T19:26:26 CDT" duration-ms="343554">
       <class name="mi.app.selenium.tsd.MyStoreTest">
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:22:41 CDT" name="setupDriver" finished-at="2021-04-05T18:22:48 CDT" duration-ms="7142" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:20:42 CDT" name="setupDriver" finished-at="2021-04-05T19:21:33 CDT" duration-ms="50319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="createAccountUser()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:22:48 CDT" name="createAccountUser" finished-at="2021-04-05T18:23:00 CDT" duration-ms="12166" status="PASS">
+        <test-method signature="createAccountUser()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:21:33 CDT" name="createAccountUser" finished-at="2021-04-05T19:21:40 CDT" duration-ms="6991" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='id_gender1']"}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GG283LA', ip: '192.168.100.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\jorge\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50196}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e498f1d0e72d9b285a950d911ddb9a1f
+*** Element info: {Using=xpath, value=//*[@id='id_gender1']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='id_gender1']"}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GG283LA', ip: '192.168.100.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\jorge\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50196}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e498f1d0e72d9b285a950d911ddb9a1f
+*** Element info: {Using=xpath, value=//*[@id='id_gender1']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at mi.app.selenium.pages.Register_page.registerUser(Register_page.java:82)
+at mi.app.selenium.tsd.MyStoreTest.createAccountUser(MyStoreTest.java:12)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccountUser -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:23:00 CDT" name="afterTest" finished-at="2021-04-05T18:23:01 CDT" duration-ms="820" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:21:40 CDT" name="afterTest" finished-at="2021-04-05T19:21:41 CDT" duration-ms="1395" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:23:01 CDT" name="setupDriver" finished-at="2021-04-05T18:23:08 CDT" duration-ms="7248" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:21:41 CDT" name="setupDriver" finished-at="2021-04-05T19:21:49 CDT" duration-ms="7647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="happySignIn()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:23:08 CDT" name="happySignIn" finished-at="2021-04-05T18:23:15 CDT" duration-ms="6976" status="PASS">
+        <test-method signature="happySignIn()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:21:49 CDT" name="happySignIn" finished-at="2021-04-05T19:21:57 CDT" duration-ms="8013" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- happySignIn -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:23:15 CDT" name="afterTest" finished-at="2021-04-05T18:23:16 CDT" duration-ms="740" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:21:57 CDT" name="afterTest" finished-at="2021-04-05T19:21:58 CDT" duration-ms="891" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:23:16 CDT" name="setupDriver" finished-at="2021-04-05T18:23:21 CDT" duration-ms="5582" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:21:58 CDT" name="setupDriver" finished-at="2021-04-05T19:22:05 CDT" duration-ms="7444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="wrongSignInEmail()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:23:21 CDT" name="wrongSignInEmail" finished-at="2021-04-05T18:23:29 CDT" duration-ms="7342" status="PASS">
+        <test-method signature="wrongSignInEmail()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:22:05 CDT" name="wrongSignInEmail" finished-at="2021-04-05T19:22:12 CDT" duration-ms="6932" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongSignInEmail -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:23:29 CDT" name="afterTest" finished-at="2021-04-05T18:23:29 CDT" duration-ms="759" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:22:12 CDT" name="afterTest" finished-at="2021-04-05T19:22:13 CDT" duration-ms="847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:23:29 CDT" name="setupDriver" finished-at="2021-04-05T18:23:38 CDT" duration-ms="8682" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:22:13 CDT" name="setupDriver" finished-at="2021-04-05T19:22:20 CDT" duration-ms="7109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="wrognSignInPasswd()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:23:38 CDT" name="wrognSignInPasswd" finished-at="2021-04-05T18:23:45 CDT" duration-ms="6950" status="PASS">
+        <test-method signature="wrognSignInPasswd()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:22:20 CDT" name="wrognSignInPasswd" finished-at="2021-04-05T19:22:28 CDT" duration-ms="7680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrognSignInPasswd -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:23:45 CDT" name="afterTest" finished-at="2021-04-05T18:23:46 CDT" duration-ms="764" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:22:28 CDT" name="afterTest" finished-at="2021-04-05T19:22:29 CDT" duration-ms="1036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:23:46 CDT" name="setupDriver" finished-at="2021-04-05T18:23:53 CDT" duration-ms="6787" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:22:29 CDT" name="setupDriver" finished-at="2021-04-05T19:22:36 CDT" duration-ms="7781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="addCart()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:23:53 CDT" name="addCart" finished-at="2021-04-05T18:24:08 CDT" duration-ms="15332" status="PASS">
+        <test-method signature="addCart()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:22:36 CDT" name="addCart" finished-at="2021-04-05T19:23:07 CDT" duration-ms="30683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCart -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:24:08 CDT" name="afterTest" finished-at="2021-04-05T18:24:09 CDT" duration-ms="779" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:23:07 CDT" name="afterTest" finished-at="2021-04-05T19:23:08 CDT" duration-ms="886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:24:09 CDT" name="setupDriver" finished-at="2021-04-05T18:24:15 CDT" duration-ms="5739" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:23:08 CDT" name="setupDriver" finished-at="2021-04-05T19:23:16 CDT" duration-ms="8437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="purchaseTDC()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:24:15 CDT" name="purchaseTDC" finished-at="2021-04-05T18:24:40 CDT" duration-ms="25148" status="PASS">
+        <test-method signature="purchaseTDC()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:23:16 CDT" name="purchaseTDC" finished-at="2021-04-05T19:23:53 CDT" duration-ms="36388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchaseTDC -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:24:40 CDT" name="afterTest" finished-at="2021-04-05T18:24:40 CDT" duration-ms="752" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:23:53 CDT" name="afterTest" finished-at="2021-04-05T19:23:54 CDT" duration-ms="989" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:24:40 CDT" name="setupDriver" finished-at="2021-04-05T18:24:47 CDT" duration-ms="6745" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:23:54 CDT" name="setupDriver" finished-at="2021-04-05T19:24:03 CDT" duration-ms="9310" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="purchaseCheck()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:24:47 CDT" name="purchaseCheck" finished-at="2021-04-05T18:25:13 CDT" duration-ms="25321" status="PASS">
+        <test-method signature="purchaseCheck()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:24:03 CDT" name="purchaseCheck" finished-at="2021-04-05T19:24:37 CDT" duration-ms="34017" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchaseCheck -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:25:13 CDT" name="afterTest" finished-at="2021-04-05T18:25:13 CDT" duration-ms="749" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:24:37 CDT" name="afterTest" finished-at="2021-04-05T19:24:38 CDT" duration-ms="825" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:25:13 CDT" name="setupDriver" finished-at="2021-04-05T18:25:22 CDT" duration-ms="8365" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:24:38 CDT" name="setupDriver" finished-at="2021-04-05T19:24:54 CDT" duration-ms="15625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="purchaseFromCartTDC()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:25:22 CDT" name="purchaseFromCartTDC" finished-at="2021-04-05T18:25:53 CDT" duration-ms="30968" status="PASS">
+        <test-method signature="purchaseFromCartTDC()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:24:54 CDT" name="purchaseFromCartTDC" finished-at="2021-04-05T19:25:21 CDT" duration-ms="27465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchaseFromCartTDC -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:25:53 CDT" name="afterTest" finished-at="2021-04-05T18:25:53 CDT" duration-ms="765" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:25:21 CDT" name="afterTest" finished-at="2021-04-05T19:25:22 CDT" duration-ms="1118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:25:53 CDT" name="setupDriver" finished-at="2021-04-05T18:25:59 CDT" duration-ms="5733" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:25:22 CDT" name="setupDriver" finished-at="2021-04-05T19:25:44 CDT" duration-ms="21296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="purchaseFromCartCheck()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:25:59 CDT" name="purchaseFromCartCheck" finished-at="2021-04-05T18:26:25 CDT" duration-ms="26200" status="PASS">
+        <test-method signature="purchaseFromCartCheck()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:25:44 CDT" name="purchaseFromCartCheck" finished-at="2021-04-05T19:26:13 CDT" duration-ms="29320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchaseFromCartCheck -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:26:25 CDT" name="afterTest" finished-at="2021-04-05T18:26:26 CDT" duration-ms="768" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:26:13 CDT" name="afterTest" finished-at="2021-04-05T19:26:14 CDT" duration-ms="1228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:26:26 CDT" name="setupDriver" finished-at="2021-04-05T18:26:33 CDT" duration-ms="6781" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:26:14 CDT" name="setupDriver" finished-at="2021-04-05T19:26:26 CDT" duration-ms="11671" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GG283LA', ip: '192.168.100.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\jorge\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c824e9b541b402657c9debf4c494329f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GG283LA', ip: '192.168.100.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\jorge\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c824e9b541b402657c9debf4c494329f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at mi.app.selenium.core.MyStoreBaseTest.setupDriver(MyStoreBaseTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="addToWishList()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:26:33 CDT" name="addToWishList" finished-at="2021-04-05T18:26:51 CDT" duration-ms="18121" status="PASS">
+        <test-method signature="addToWishList()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:26:26 CDT" name="addToWishList" finished-at="2021-04-05T19:26:26 CDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GG283LA', ip: '192.168.100.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\jorge\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c824e9b541b402657c9debf4c494329f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GG283LA', ip: '192.168.100.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\jorge\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c824e9b541b402657c9debf4c494329f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at mi.app.selenium.core.MyStoreBaseTest.setupDriver(MyStoreBaseTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToWishList -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:26:51 CDT" name="afterTest" finished-at="2021-04-05T18:26:52 CDT" duration-ms="758" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:26:26 CDT" name="afterTest" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1617668786261" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:26:52 CDT" name="setupDriver" finished-at="2021-04-05T18:26:58 CDT" duration-ms="6218" status="PASS">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:26:26 CDT" name="setupDriver" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1617668786263" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="sendWishList()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:26:58 CDT" name="sendWishList" finished-at="2021-04-05T18:27:14 CDT" duration-ms="16444" status="PASS">
+        <test-method signature="sendWishList()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:26:26 CDT" name="sendWishList" finished-at="2021-04-05T19:26:26 CDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GG283LA', ip: '192.168.100.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\jorge\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c824e9b541b402657c9debf4c494329f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GG283LA', ip: '192.168.100.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\jorge\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c824e9b541b402657c9debf4c494329f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at mi.app.selenium.core.MyStoreBaseTest.setupDriver(MyStoreBaseTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendWishList -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T18:27:14 CDT" name="afterTest" finished-at="2021-04-05T18:27:15 CDT" duration-ms="792" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:mi.app.selenium.tsd.MyStoreTest@3a6bb9bf]" started-at="2021-04-05T19:26:26 CDT" name="afterTest" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1617668786270" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
