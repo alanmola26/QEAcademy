@@ -7,8 +7,6 @@
         <methods>
           <include name="sendWishList"/>
           <include name="setupDriver"/>
-          <include name="createAccountUser"/>
-          <include name="addToWishList"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- mi.app.selenium.tsd.MyStoreTest -->
